@@ -1,8 +1,10 @@
 class Distribution:
-    def __init__(self, name, version, state):
+    def __init__(self, name, version, status):
         self.name = name
         self.version = version
-        self.state = state
+        self.status = status
 
     def __repr__(self):
-        return f'{self.name} ({self.version}) - {self.state}'
+        return f'{self.name} ({self.version}) - {self.status}'
+
+
